@@ -10,20 +10,34 @@
   <link rel="import" href="bower_components/core-icon/core-icon.html">
   <link rel="import" href="bower_components/core-icons/core-icons.html">
   <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
+  <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
   </head>
 
   <body fullbleed layout vertical>
-  <core-drawer-panel>
-    <core-header-panel drawer flex waterfall>
-        <core-toolbar>
+  <core-drawer-panel forceNarrow>
+    <core-header-panel drawer waterfall-tall>
+        <core-toolbar> Menu
         </core-toolbar>
     </core-header-panel>
-    <core-header-panel main>
-        <core-toolbar>
-          <core-icon icon="polymer" core-drawer-toggle></core-icon>
-          <div>Awesome App</div>
-        </core-toolbar>
-    </core-header-panel>
+    <div main layout vertical>
+      <core-header-panel main flex>
+          <core-toolbar>
+            <core-icon icon="menu" core-drawer-toggle></core-icon>
+            <div flex>App</div>
+            <core-icon id="trigger" icon="expand-more"></core-icon>
+          </core-toolbar>
+      </core-header-panel>
+      <div horizontal layout>
+        <div flex></div>
+        <a href="http://www.cloud.com">
+          <paper-fab id="add-button"icon="cloud" noink></paper-fab>
+        </a>      
+      </div>
+    </div>
   </core-drawer-panel>
   </body>
 </html>
+
+

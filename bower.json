@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5",
-    "core-toolbar": "Polymer/core-toolbar#^0.5"
+    "core-toolbar": "Polymer/core-toolbar#^0.5",
+    "core-dropdown-menu": "Polymer/core-dropdown-menu#^0.5"
   }
 }
